@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C3BB90672AAE69EC00A54D42 /* TrackCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BB90662AAE69EC00A54D42 /* TrackCell.swift */; };
+		C3DFAA0E2ABA720C0080860D /* AlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFAA0D2ABA720C0080860D /* AlbumsViewController.swift */; };
+		C3DFAA102ABA76DE0080860D /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFAA0F2ABA76DE0080860D /* Album.swift */; };
+		C3DFAA122ABA7BE60080860D /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DFAA112ABA7BE60080860D /* AlbumCell.swift */; };
 		CB7254DF2939D37800F531FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7254DE2939D37800F531FB /* AppDelegate.swift */; };
 		CB7254E12939D37800F531FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7254E02939D37800F531FB /* SceneDelegate.swift */; };
 		CB7254E32939D37800F531FB /* TracksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7254E22939D37800F531FB /* TracksViewController.swift */; };
@@ -21,7 +24,10 @@
 
 /* Begin PBXFileReference section */
 		C3BB90662AAE69EC00A54D42 /* TrackCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackCell.swift; sourceTree = "<group>"; };
-		CB7254DB2939D37800F531FB /* lab-tunley.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "lab-tunley.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3DFAA0D2ABA720C0080860D /* AlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumsViewController.swift; sourceTree = "<group>"; };
+		C3DFAA0F2ABA76DE0080860D /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		C3DFAA112ABA7BE60080860D /* AlbumCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		CB7254DB2939D37800F531FB /* HW3_MobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW3_MobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB7254DE2939D37800F531FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB7254E02939D37800F531FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CB7254E22939D37800F531FB /* TracksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +62,7 @@
 		CB7254DC2939D37800F531FB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CB7254DB2939D37800F531FB /* lab-tunley.app */,
+				CB7254DB2939D37800F531FB /* HW3_MobileApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,11 +72,13 @@
 			children = (
 				CB7254F7293B224F00F531FB /* Models */,
 				CB7254E22939D37800F531FB /* TracksViewController.swift */,
+				C3DFAA0D2ABA720C0080860D /* AlbumsViewController.swift */,
 				C3BB90662AAE69EC00A54D42 /* TrackCell.swift */,
 				CB8B1546293EFCA100397B69 /* DetailViewController.swift */,
 				CB7254DE2939D37800F531FB /* AppDelegate.swift */,
 				CB7254E02939D37800F531FB /* SceneDelegate.swift */,
 				CB7254E42939D37800F531FB /* Main.storyboard */,
+				C3DFAA112ABA7BE60080860D /* AlbumCell.swift */,
 				CB7254E72939D37A00F531FB /* Assets.xcassets */,
 				CB7254E92939D37A00F531FB /* LaunchScreen.storyboard */,
 				CB7254EC2939D37A00F531FB /* Info.plist */,
@@ -82,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				CB7254F5293B224000F531FB /* Track.swift */,
+				C3DFAA0F2ABA76DE0080860D /* Album.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -89,9 +98,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CB7254DA2939D37800F531FB /* lab-tunley */ = {
+		CB7254DA2939D37800F531FB /* HW3_MobileApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB7254EF2939D37A00F531FB /* Build configuration list for PBXNativeTarget "lab-tunley" */;
+			buildConfigurationList = CB7254EF2939D37A00F531FB /* Build configuration list for PBXNativeTarget "HW3_MobileApp" */;
 			buildPhases = (
 				CB7254D72939D37800F531FB /* Sources */,
 				CB7254D82939D37800F531FB /* Frameworks */,
@@ -101,12 +110,12 @@
 			);
 			dependencies = (
 			);
-			name = "lab-tunley";
+			name = HW3_MobileApp;
 			packageProductDependencies = (
 				CB7254FE293B610C00F531FB /* Nuke */,
 			);
 			productName = "lab-tunley";
-			productReference = CB7254DB2939D37800F531FB /* lab-tunley.app */;
+			productReference = CB7254DB2939D37800F531FB /* HW3_MobileApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -124,7 +133,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CB7254D62939D37700F531FB /* Build configuration list for PBXProject "lab-tunley" */;
+			buildConfigurationList = CB7254D62939D37700F531FB /* Build configuration list for PBXProject "HW3_MobileApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -140,7 +149,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CB7254DA2939D37800F531FB /* lab-tunley */,
+				CB7254DA2939D37800F531FB /* HW3_MobileApp */,
 			);
 		};
 /* End PBXProject section */
@@ -163,12 +172,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3DFAA0E2ABA720C0080860D /* AlbumsViewController.swift in Sources */,
 				CB7254E32939D37800F531FB /* TracksViewController.swift in Sources */,
 				CB7254DF2939D37800F531FB /* AppDelegate.swift in Sources */,
 				CB8B1547293EFCA100397B69 /* DetailViewController.swift in Sources */,
 				CB7254E12939D37800F531FB /* SceneDelegate.swift in Sources */,
 				CB7254F6293B224000F531FB /* Track.swift in Sources */,
 				C3BB90672AAE69EC00A54D42 /* TrackCell.swift in Sources */,
+				C3DFAA102ABA76DE0080860D /* Album.swift in Sources */,
+				C3DFAA122ABA7BE60080860D /* AlbumCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +379,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CB7254D62939D37700F531FB /* Build configuration list for PBXProject "lab-tunley" */ = {
+		CB7254D62939D37700F531FB /* Build configuration list for PBXProject "HW3_MobileApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB7254ED2939D37A00F531FB /* Debug */,
@@ -376,7 +388,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB7254EF2939D37A00F531FB /* Build configuration list for PBXNativeTarget "lab-tunley" */ = {
+		CB7254EF2939D37A00F531FB /* Build configuration list for PBXNativeTarget "HW3_MobileApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CB7254F02939D37A00F531FB /* Debug */,
